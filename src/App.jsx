@@ -1,26 +1,12 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
+
+import './App.module.css'
 import { Profile } from './components/profile/Profile'
 import userData from '../src/userData.json'
 
 
-// const userData = {
-//   username: "Jacques Gluke",
-//   tag: "jgluke",
-//   location: "Ocho Rios, Jamaica",
-//   avatar: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-//   stats: {
-//     followers: 5603,
-//     views: 4827,
-//     likes: 1308,
-//   },
-// };
-
 export default function App() {
   return (
-    <div>
+      <div>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -29,6 +15,8 @@ export default function App() {
         stats={userData.stats}
       />
     </div>
+    
+    
   );
 }
 

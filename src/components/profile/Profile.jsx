@@ -1,9 +1,10 @@
 
+import css from "../profile/Profile.module.css"
 export const Profile = ({ name, tag, location, image, stats }) => {
     return (
         <div>
-            <div>
-                <img
+            <div className={css.profile}>
+                <img className={css.avatar}
                     src={image}
                     alt="User avatar"
                 />
@@ -12,7 +13,7 @@ export const Profile = ({ name, tag, location, image, stats }) => {
                 <p>{location}</p>
             </div>
 
-            <ul>
+            <ul className={css.stats}>
                 <li>
                     <span>Followers</span>
                     <span>{stats.followers}</span>
